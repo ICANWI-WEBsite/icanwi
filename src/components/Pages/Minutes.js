@@ -64,7 +64,7 @@ import Pdf from '../Pages/InnerPage/Pdf'
           </Col>
           <Col className = ' col-md-12 col-lg-5 Columns relative top-32 '>
             <h3 className='d-flex w-100'><span><FaRegCalendarCheck className='mt-1 mx-1'/></span>Meeting Minutes | Date</h3>
-            <p className ='relative top-12 left-2 grid grid-cols-1 gap-3 button-page '  >
+            <div className ='relative top-12 left-2 grid grid-cols-1 gap-3 button-page '  >
 
             <BUTTON onClick={octMeeting2022}> Meeting Minutes <span>for October </span>| 9/10/2022</BUTTON>
 
@@ -84,7 +84,7 @@ import Pdf from '../Pages/InnerPage/Pdf'
           <BUTTON onClick={octMeeting}> Meeting Minutes <span>for October </span>| 13/10/2019</BUTTON>
 
           
-          </p>
+          </div>
           </Col>
           </ROW>
         </Container>

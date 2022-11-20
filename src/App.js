@@ -1,5 +1,5 @@
 
-import react, {useState} from 'react';
+import react, {useState, useEffect} from 'react';
 import Register from './components/Header/DropdownContainer/Register';
 import Modals from './components/Header/DropdownContainer/Modals';
 import  './CSS/App.scss';
@@ -41,16 +41,23 @@ import Sept2022Meeting from './components/Pages/InnerPage/Sept2022Meeting';
 import Oct2019Meeting from './components/Pages/InnerPage/Oct2019Meeting';
 import Oct2022Meeting from './components/Pages/InnerPage/Oct2022Meeting';
 
- const App =() =>{
+const count = 10000000;
+const App =() =>{
 const[islogged, setIslogged] = useState(false)
 const logging = ()=>{setIslogged(!islogged)}
+const navigate = useNavigate()
 
+useEffect(()=>{
+   setTimeout(()=>{
+      navigate("/")
+   }, 1000 * count)
+
+},[])
 
 function refreshPage() {window.reload(false);}
 
  return (
      <>
-<Router>
 <AuthProvider>
 <APP className='p-0 m-0 position-relative bg-slate-900 text-light h-100'>
 <AppHeader>
@@ -79,7 +86,6 @@ function refreshPage() {window.reload(false);}
     </AppHeader>
    </APP> 
 </AuthProvider>
-</Router>
    </>
   );
 }

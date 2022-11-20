@@ -20,7 +20,8 @@ const Oct2022Meeting = () => {
             <div className='col col-sm-12 col-md-12 col-lg-7'>
               <TextPage className='jumbotron p-5 relative top-20 bottom-20 pb-10 text-justify'>
 
-                <h2><strong> October Minutes of the Meeting</strong></h2>
+
+              <h2><strong> October Minutes of the Meeting</strong></h2>
                 <p><b>Date:</b> 9/10/2022</p>
 
                 <p><strong>Members Present:</strong> Kingsley Agoha, Austine Okeagu, Chuks Ogujawa, Charles Obodoechina, Francis Udoku, Emeka Onwunzo, Emmanuel </p>
@@ -64,10 +65,16 @@ const Oct2022Meeting = () => {
                 </p>
          
                 <Container>
-              <Row className='d-flex justify-content-center align-items-center'><strong>A summary of the Dues</strong></Row>
+            
               <Row>
-                <Col>   <table>
+                <Col> 
+               
+              <table>
+             
               <thead>
+              <tr>
+             <th colspan="2">Dues Payment summary</th>
+             </tr>
                 <tr>
                 <th scope="col">Names</th>
                 <th scope="col">Dues</th>
@@ -116,7 +123,7 @@ const Oct2022Meeting = () => {
             </Container>
              
 
-              
+               
               </TextPage>
             </div>
             <div className='col col-sm-12 col-md-12 col-lg-5 Columns relative top-32'>
@@ -151,9 +158,11 @@ const Oct2022Meeting = () => {
                   className='px-5 py-2 text-decoration-none text-light shadow-none border-none outline-line'>
                   Minutes of the Meeting for Sept | 18/05/2022</BUTTON>
 
-                  <BUTTON as={Link} to='Oct2019Meeting'
-                  className='px-5 py-2 text-decoration-none text-light shadow-none border-none outline-line'>
-                  Minutes of the Meeting for Oct | 13/10/2019</BUTTON>
+               
+                  <BUTTON as={Link} to='/Oct2019Meeting'
+                  className='px-3 text-center py-2 text-decoration-none text-light shadow-none border-none outline-line'>
+                  Minutes of the Meeting for October | 13/10/2022</BUTTON>
+
 
                 <BUTTON className='constution shadow-none border-none outline-line px-5 py-2 text-decoration-none text-light '
                   as={Link} to='/Minutes'>
