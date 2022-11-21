@@ -47,22 +47,21 @@ const[islogged, setIslogged] = useState(false)
 const logging = ()=>{setIslogged(!islogged)}
 const navigate = useNavigate()
 
-useEffect(()=>{
+/* useEffect(()=>{
    setTimeout(()=>{
       navigate("/")
    }, 1000 * count)
 
-},[])
+},[]) */
 
 function refreshPage() {window.reload(false);}
-
  return (
      <>
 <AuthProvider>
 <APP className='p-0 m-0 position-relative bg-slate-900 text-light h-100'>
 <AppHeader>
+<Home/>
 <Routes>
- <Route exact path='/' element={<Home/>}/>
  <Route path='/Gallary' element={<Gallary/>}/>
  <Route path='/Videos' element={<Videos/>}/> 
 <Route path='/Minutes' element={
