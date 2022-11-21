@@ -52,7 +52,10 @@ const navigate = useNavigate()
       navigate("/")
    }, 1000 * count)
 
-},[]) */
+},[]) 
+  "homepage": "https://ICANWI-WEBsite.github.io/icanwi",
+
+*/
 
 function refreshPage() {window.reload(false);}
  return (
